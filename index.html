@@ -17,6 +17,11 @@
                 <i v-on:click="backward" class="fas fa-chevron-left"></i>
                 <img v-bind:src="img[imgIndex]" alt="">
                 <i v-on:click="forward" class="fas fa-chevron-right"></i>
+                <div class="container-bullet">
+                    <span>
+                        <i class="fas fa-circle" v-for="(item, index) in img" :class="index == imgIndex? 'red' : ' ' "></i>
+                    </span>
+                </div>
             </div>
         </div>
     </div>

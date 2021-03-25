@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .carousel img {
@@ -27,4 +28,16 @@
 
 i[class*="fa-chevron"]{
     cursor: pointer;
+}
+
+.container-bullet {
+    position: absolute;
+    bottom: 1%;
+    right: 50%;
+    transform: translate(57%, -50%);
+    color: white;
+}
+
+.red {
+    color: aqua;
 }
